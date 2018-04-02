@@ -32,9 +32,26 @@ int main()
 	}
 
 	//Con lai Lay tu P2 dua vao Child.
-	
+	int tt = 0;
+	for (int i = 1; i < 100; i++)
+	{
+		for (int j = x; j <= y; j++)
+		{
+			if (ox->P2->chromT.at(i) == Child.at(j))
+			{
+				tt = 1;
+				break;
+			}
+			else
+				tt = 0;
+		}
+		if (tt == 1)
+			i--;
+		else
+			Child.at(i) = ox->P2->chromT.at(i);
+	}
 	// Ket qua cua Child
-	for (int i = x; i <= y; i++)
+	for (int i = 1; i < 100; i++)
 	{
 		cout << Child.at(i) << " ";
 	}
