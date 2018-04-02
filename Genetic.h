@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-class CrossoverOX {
+class Genetic {
 	public:
 		// Khoi tao 2 cha
 		Individu * P1;
@@ -13,8 +13,11 @@ class CrossoverOX {
 		vector<int> Child;
 
 		// Khoi tao class
-		CrossoverOX();
+		Genetic();
 		// Ham tao cha ngau nhieu
 		void getParent1();
 		void getPatent2();
+
+		//crossover OX
+		void crossOX();
 };
